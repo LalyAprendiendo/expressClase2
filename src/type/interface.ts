@@ -1,0 +1,1 @@
+export type method = "POST" | "GET" | "PUT" | "PATCH" | "DELETE"

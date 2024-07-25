@@ -1,4 +1,4 @@
-type method = "POST" | "GET" | "PUT" | "PATCH" | "DELETE"
+import { method } from "./type/interface";
 
 async function fetchData(url: string, method: method = "GET", data = {}) { // CON LA ASIGNACION LE DEFINO EL VALOR POR DEFECTO QUE TOMARÁ EL PARAMETRO CUANDO NO ME ENVIEN NADA AL INVOCAR LA FUNCIÓN
     const response = await fetch(`http:localhost:8080/${url}`, {
